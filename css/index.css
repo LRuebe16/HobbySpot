@@ -1,0 +1,79 @@
+h1{
+  font-family: 'Anton', sans-serif;
+}
+
+.jumbotron {
+  background-image: url(../Images/HeroImage.png);
+  background-size: contain;
+  width: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  height: calc(100vh - 25px);
+  align-items: center;
+  justify-content: center;
+
+}
+
+.customNav{
+  position: fixed;
+  width: 100%;
+  background: url("../images/transparency.png");
+  background-color: transparent !important;
+  background-size: cover;
+  z-index: 10;
+}
+.navbar-nav{
+  margin-left: auto;
+
+}
+.navbar-brand img{
+  padding-right: 15px;
+  width: 100%;
+}
+.nav-item {
+  margin: 0px 15px;
+  align-items: center;
+}
+.navbar-light .navbar-brand {
+  color: #f8f9fa;
+}
+.nav-link{
+  color: white !important;
+}
+
+
+.cardContainer{
+  margin-top: 20px;
+
+}
+.card {
+  margin: 0 auto;
+}
+
+.card-body {
+  color: white;
+}
+.card-link {
+  background-color: #FFA300;
+  padding: 10px;
+  color: white;
+}
+
+.bookFlight {
+  background-image: url("../Images/AirplaneWing.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+.reservation {
+  background-image: url("../Images/Pool.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+.planTrip {
+  background-image: url("../Images/PlanTrip.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+}
