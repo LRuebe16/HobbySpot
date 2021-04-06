@@ -46,6 +46,7 @@ h1{
   font-weight: 300;
   line-height: 1.2;
   color: white;
+  text-shadow: -10px 10px 20px rgb(0 0 0 / 50%);
 }
 .cardContainer{
   margin-top: 20px;
