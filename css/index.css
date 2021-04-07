@@ -14,12 +14,13 @@ h1{
   width: 100%;
   background-repeat: no-repeat;
   display: flex;
+  flex-direction: column;
   height: calc(100vh - 100px);
   align-items: center;
   justify-content: center;
 }
 .home {
-  background-image: url(../Images/pencils.jpg);
+  background-image: url(../Images/pencils.png);
   background-size: cover;
   width: 100%;
   background-repeat: no-repeat;
@@ -44,6 +45,23 @@ h1{
   line-height: 1.2;
   color: white;
   text-shadow: -10px 10px 20px rgb(0 0 0 / 50%);
+}
+.btn-outline-primary {
+  background-color: white;
+  color: green;
+  border-color: green;
+  border: 2px solid;
+  margin: 20px;
+}
+.btn-outline-primary:hover {
+  background-color: green;
+  color: white;
+  border-color: green !important;
+  border: 2px solid;
+}
+.btn-secondary {
+  background-color: transparent;
+  border-color: transparent;
 }
 
 .customNav{

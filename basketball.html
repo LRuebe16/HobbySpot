@@ -30,7 +30,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>  
     <link rel="stylesheet" href="css/index.css">
 
     <title>Hobby Spot</title>
@@ -39,18 +41,29 @@
 
     <!-- Navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light customNav">
-      <a class="navbar-brand" href="../index.html">Hobby Spot</a>
+      <a class="navbar-brand" href="index.html">Hobby Spot</a>
     
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Hobbies<span class="sr-only">(current)</span></a>
+          <div class="dropdown">
+            <li><button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Hobbies
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="index.html">Hobbies</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div> 
+        </li>
+           <li class="nav-item">
+            <a class="nav-link" href="#">Related Hobbies</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Get Started</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Tips</a>
+            <a class="nav-link" href="#">Tips and Tricks</a>
           </li>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -64,7 +77,11 @@
     <!-- Jumbotron -->
     <div class="jumbotron basketball">
       <h1 class="display-4">BASKETBALL</h1>
-    </div>
+     <!--  <div> <button type="button" class="btn btn-outline-primary">Related Hobbies</button>
+      <button type="button" class="btn btn-outline-primary">Get Started</button>
+      <button type="button" class="btn btn-outline-primary">Tips and Tricks</button>
+    </div>  -->
+  </div>
     <!-- End jumbotron -->
 <section>
     <div class="container start">
