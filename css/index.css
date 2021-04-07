@@ -1,8 +1,14 @@
+body{
+  width: 100%;
+  margin: 0;
+
+}
+
 h1{
   font-family: 'Anton', sans-serif;
 }
 
-.jumbotron {
+.basketball {
   background-image: url(../Images/Jumbotron_bball.jpg);
   background-size: cover;
   width: 100%;
@@ -11,28 +17,52 @@ h1{
   height: calc(100vh - 100px);
   align-items: center;
   justify-content: center;
+}
+.home {
+  background-image: url(../Images/pencils.jpg);
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  height: calc(100vh - 100px);
+  align-items: center;
+  justify-content: center;
+}
 
+.display-4{
+  font-size: 15rem;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.2;
+  color: white;
+  text-shadow: -10px 10px 20px rgb(0 0 0 / 50%);
+}
+.display-3{
+  font-size: 6rem;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.2;
+  color: white;
+  text-shadow: -10px 10px 20px rgb(0 0 0 / 50%);
 }
 
 .customNav{
   position: fixed;
+  background-color: rgba(0, 0, 0, 0.733) !important;
   width: 100%;
-  background: url("../images/transparency.png");
-  background-color: transparent !important;
-  background-size: cover;
   z-index: 10;
 }
 .navbar-nav{
   margin-left: auto;
-
+  margin-right: 0 !important;
 }
 .navbar-brand img{
   padding-right: 15px;
   width: 100%;
+  
 }
 .nav-item {
   margin: 0px 15px;
-  align-items: center;
 }
 .navbar-light .navbar-brand {
   color: #f8f9fa;
@@ -41,45 +71,133 @@ h1{
   color: white !important;
 }
 
-.display-4{
-  font-size: 15rem;
-  font-weight: 300;
-  line-height: 1.2;
-  color: white;
-  text-shadow: -10px 10px 20px rgb(0 0 0 / 50%);
-}
-.cardContainer{
-  margin-top: 20px;
 
+.start p{
+  font-size: 20px;
+  color: #000000;
+  text-align: left;
+  justify-content: center;
+  align-content: center;
 }
-.card {
+.getStarted{
+  display: grid;
+  width: 100%;
+  align-items: center;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "getStartedLeft getStartedRight getStartedRight getStartedRight"
+  "tipsLeft tipsLeft tipsLeft tipsRight"
+}
+.getStartedRight{
+  grid-area: getStartedRight;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.getStartedLeft {
+  grid-area: getStartedLeft;
+  padding-bottom: 20px;
+}
+.tipsRight{
+  grid-area: tipsRight;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.tipsLeft {
+  grid-area: tipsLeft;
+  padding-bottom: 20px;
+}
+.getStarted img{
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+.container .start {
+  margin-right: 0px;
+  margin-left: 0px;
+  padding: 20px;
+  max-width: 100% ;
+}
+.row{
   margin: 0 auto;
 }
 
-.card-body {
-  color: white;
+
+
+
+.footer {
+  background-color: rgb(0, 0, 0); 
+  list-style-type: none;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding-top: 0;
 }
-.card-link {
-  background-color: #FFA300;
-  padding: 10px;
+
+.footer li {
+  display: inline-block;
+  padding: 20px;
+  }
+
+/*social media icons*/
+
+.fa {
+  padding: 10px 10px 10px 10px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  width: 50px;
+}
+
+.fa-twitter {
+  background: #55ACEE;
   color: white;
 }
 
-.bookFlight {
-  background-image: url("../Images/AirplaneWing.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 400px;
+.fa-google {
+  background: #dd4b39;
+  color: white;
 }
-.reservation {
-  background-image: url("../Images/Pool.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 400px;
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
 }
-.planTrip {
-  background-image: url("../Images/PlanTrip.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 400px;
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
 }
+
+
+
+/*Media Query*/
+@media only screen and (min-width: 1200px) {
+.container {
+    max-width: 100%;
+}}
+@media only screen and (min-width: 992px) {
+  .container {
+      max-width: none;
+  }}
+  @media only screen and (min-width: 768px) {
+    .container {
+        max-width: none;
+    }}
+    @media only screen and (min-width: 576px) {
+      .container {
+          max-width: none;
+      }}
