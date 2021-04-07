@@ -155,12 +155,18 @@ h1{
 
 .Test{
   width: 100%;
+  color: white;
   position: relative;
   text-align: center;
-  color: white;
   padding: 20px;
   margin: 0 auto;
+  transition: .5s ease;
 }
+
+.Test img:hover{
+  filter: blur(2px);
+}
+
 
 .centered h1 {
   position: absolute;
