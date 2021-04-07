@@ -6,9 +6,21 @@ body{
 
 h1{
   font-family: 'Anton', sans-serif;
+  text-align: center;
 }
 
 .basketball {
+  background-image: url(../Images/Jumbotron_bball.jpg);
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 100px);
+  align-items: center;
+  justify-content: center;
+}
+.basketballRelated {
   background-image: url(../Images/Jumbotron_bball.jpg);
   background-size: cover;
   width: 100%;
@@ -39,7 +51,7 @@ h1{
   text-shadow: -10px 10px 20px rgb(0 0 0 / 50%);
 }
 .display-3{
-  font-size: 6rem;
+  font-size: 10rem;
   font-weight: 300;
   text-align: center;
   line-height: 1.2;
@@ -60,7 +72,6 @@ h1{
   border: 2px solid;
 }
 .btn-secondary {
-  background-color: transparent;
   border-color: transparent;
 }
 
@@ -142,6 +153,20 @@ h1{
   margin: 0 auto;
 }
 
+
+
+.cardContainer {
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
+}
+.card {
+  margin: 0 auto;
+  border: solid 2px black;
+}
+.card-body {
+  background-color: lightgray;
+}
 
 
 
