@@ -153,6 +153,21 @@ h1{
   margin: 0 auto;
 }
 
+.Test{
+  width: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 
 .cardContainer {
