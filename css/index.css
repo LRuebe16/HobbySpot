@@ -1,13 +1,16 @@
 body{
   width: 100%;
   margin: 0;
-
+}
+html{
+  scroll-behavior: smooth;
 }
 
 h1{
   font-family: 'Anton', sans-serif;
   text-align: center;
 }
+a:hover { text-decoration: none; }
 
 .basketball {
   background-image: url(../Images/Jumbotron_bball.jpg);
@@ -16,7 +19,7 @@ h1{
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 300px);
   align-items: center;
   justify-content: center;
 }
@@ -27,7 +30,7 @@ h1{
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 300px);
   align-items: center;
   justify-content: center;
 }
@@ -83,7 +86,7 @@ h1{
 }
 .navbar-nav{
   margin-left: auto;
-  margin-right: 0 !important;
+  margin-right: center;
 }
 .navbar-brand img{
   padding-right: 15px;
@@ -98,6 +101,10 @@ h1{
 }
 .nav-link{
   color: white !important;
+}
+.green {
+  color: green !important;
+  background-color: rgb(255, 255, 255);
 }
 
 
