@@ -9,6 +9,11 @@ html{
 h1{
   font-family: 'Anton', sans-serif;
   text-align: center;
+  font-size: 80px;
+}
+h2{
+  font-family: 'Anton', sans-serif;
+  text-align: left;
 }
 a:hover { text-decoration: none; }
 
@@ -20,6 +25,17 @@ a:hover { text-decoration: none; }
   display: flex;
   flex-direction: column;
   height: calc(100vh - 300px);
+  align-items: center;
+  justify-content: center;
+}
+.howToGetStarted {
+  background-image: url(../Images/Jumbotron_bball.jpg);
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 400px);
   align-items: center;
   justify-content: center;
 }
