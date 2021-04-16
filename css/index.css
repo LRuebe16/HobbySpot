@@ -29,6 +29,7 @@ a:hover { text-decoration: none; }
   display: flex;
   flex-direction: column;
   height: calc(100vh - 300px);
+  padding-top: 100px;
   align-items: center;
   justify-content: center;
 }
@@ -39,7 +40,8 @@ a:hover { text-decoration: none; }
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 400px);
+  height: calc(100vh - 300px);
+  padding-top: 100px;
   align-items: center;
   justify-content: center;
 }
@@ -51,6 +53,7 @@ a:hover { text-decoration: none; }
   display: flex;
   flex-direction: column;
   height: calc(100vh - 300px);
+  padding-top: 100px;
   align-items: center;
   justify-content: center;
 }
@@ -61,6 +64,7 @@ a:hover { text-decoration: none; }
   background-repeat: no-repeat;
   display: flex;
   height: calc(100vh - 200px);
+  padding-top: 100px;
   align-items: center;
   justify-content: center;
 }
@@ -87,29 +91,32 @@ a:hover { text-decoration: none; }
   border-color: green;
   border: 2px solid;
   margin: 20px;
+  cursor: pointer;
 }
 .btn-outline-primary:hover {
   background-color: green;
   color: white;
   border-color: green !important;
   border: 2px solid;
+  cursor: pointer;
 }
 .btn-secondary {
   border-color: transparent;
   color: #fff;
   background-color: green;
   border-color: none;
+  cursor: pointer;
 }
 .btn-secondary.focus, .btn-secondary:focus, .btn-secondary:hover {
   color: #fff;
   border-color: white;
   background-color: green !important;
+  box-shadow: none !important;
+  cursor: pointer;
 }
-
-
 .customNav{
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.733) !important;
+  background-color: rgba(0, 0, 0, 0.9) !important;
   width: 100%;
   z-index: 10;
 }
@@ -142,6 +149,7 @@ a:hover { text-decoration: none; }
 .nav-link{
   color: white !important;
   width: max-content;
+  border-radius: .25rem;
 }
 .nav-link:hover{
   background-color: white;
@@ -168,8 +176,6 @@ a:hover { text-decoration: none; }
   background-color: white;
   color: green;
 }
-
-
 .start p{
   font-size: 20px;
   color: #000000;
