@@ -10,6 +10,7 @@ h1{
   font-family: 'Anton', sans-serif;
   text-align: center;
   font-size: 75px;
+  color: green;
 }
 h2{
   font-family: 'Anton', sans-serif;
@@ -17,6 +18,9 @@ h2{
 }
 a:hover { text-decoration: none; }
 
+.jumbotron{
+  padding: 0px;;
+}
 .basketball {
   background-image: url(../Images/Jumbotron_bball.jpg);
   background-size: cover;
@@ -56,7 +60,7 @@ a:hover { text-decoration: none; }
   width: 100%;
   background-repeat: no-repeat;
   display: flex;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 200px);
   align-items: center;
   justify-content: center;
 }
@@ -92,7 +96,16 @@ a:hover { text-decoration: none; }
 }
 .btn-secondary {
   border-color: transparent;
+  color: #fff;
+  background-color: green;
+  border-color: none;
 }
+.btn-secondary.focus, .btn-secondary:focus, .btn-secondary:hover {
+  color: #fff;
+  border-color: white;
+  background-color: green !important;
+}
+
 
 .customNav{
   position: fixed;
@@ -102,25 +115,58 @@ a:hover { text-decoration: none; }
 }
 .navbar-nav{
   margin-left: auto;
-  margin-right: right;
+  margin-right: none;
+  text-align: center;
+}
+.mr-auto{
+  margin-right: 0 !important;
 }
 .navbar-brand img{
-  padding-right: 15px;
+  padding-left: 40px;
   width: 100%;
-  
+}
+.navbar ul li{
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding-right: 40px;
+  margin: none;
+  text-align: end;
 }
 .nav-item {
-  margin: 0px 15px;
+  margin: 0px;
 }
 .navbar-light .navbar-brand {
   color: #f8f9fa;
 }
 .nav-link{
   color: white !important;
+  width: max-content;
+}
+.nav-link:hover{
+  background-color: white;
+  color: green !important;
 }
 .green {
   color: green !important;
   background-color: rgb(255, 255, 255);
+}
+.dropdown-item{
+  white-space: normal;
+  display: block;
+  width: 100%;
+  padding: .25rem 1.5rem;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-weight: 400;
+  color: white;
+  text-align: inherit;
+  background-color: green;
+  border: 0;
+}
+.dropdown-item:hover{
+  background-color: white;
+  color: green;
 }
 
 
