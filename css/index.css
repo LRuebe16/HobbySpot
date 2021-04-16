@@ -9,7 +9,8 @@ html{
 h1{
   font-family: 'Anton', sans-serif;
   text-align: center;
-  font-size: 80px;
+  font-size: 75px;
+  color: green;
 }
 h2{
   font-family: 'Anton', sans-serif;
@@ -17,6 +18,9 @@ h2{
 }
 a:hover { text-decoration: none; }
 
+.jumbotron{
+  padding: 0px;;
+}
 .basketball {
   background-image: url(../Images/Jumbotron_bball.jpg);
   background-size: cover;
@@ -25,6 +29,7 @@ a:hover { text-decoration: none; }
   display: flex;
   flex-direction: column;
   height: calc(100vh - 300px);
+  padding-top: 100px;
   align-items: center;
   justify-content: center;
 }
@@ -35,7 +40,8 @@ a:hover { text-decoration: none; }
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 400px);
+  height: calc(100vh - 300px);
+  padding-top: 100px;
   align-items: center;
   justify-content: center;
 }
@@ -47,6 +53,7 @@ a:hover { text-decoration: none; }
   display: flex;
   flex-direction: column;
   height: calc(100vh - 300px);
+  padding-top: 100px;
   align-items: center;
   justify-content: center;
 }
@@ -56,7 +63,8 @@ a:hover { text-decoration: none; }
   width: 100%;
   background-repeat: no-repeat;
   display: flex;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 200px);
+  padding-top: 100px;
   align-items: center;
   justify-content: center;
 }
@@ -83,47 +91,91 @@ a:hover { text-decoration: none; }
   border-color: green;
   border: 2px solid;
   margin: 20px;
+  cursor: pointer;
 }
 .btn-outline-primary:hover {
   background-color: green;
   color: white;
   border-color: green !important;
   border: 2px solid;
+  cursor: pointer;
 }
 .btn-secondary {
   border-color: transparent;
+  color: #fff;
+  background-color: green;
+  border-color: none;
+  cursor: pointer;
 }
-
+.btn-secondary.focus, .btn-secondary:focus, .btn-secondary:hover {
+  color: #fff;
+  border-color: white;
+  background-color: green !important;
+  box-shadow: none !important;
+  cursor: pointer;
+}
 .customNav{
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.733) !important;
+  background-color: rgba(0, 0, 0, 0.9) !important;
   width: 100%;
   z-index: 10;
 }
 .navbar-nav{
   margin-left: auto;
-  margin-right: center;
+  margin-right: none;
+  text-align: center;
+}
+.mr-auto{
+  margin-right: 0 !important;
 }
 .navbar-brand img{
-  padding-right: 15px;
+  padding-left: 40px;
   width: 100%;
-  
+}
+.navbar ul li{
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding-right: 40px;
+  margin: none;
+  text-align: end;
 }
 .nav-item {
-  margin: 0px 15px;
+  margin: 0px;
 }
 .navbar-light .navbar-brand {
   color: #f8f9fa;
 }
 .nav-link{
   color: white !important;
+  width: max-content;
+  border-radius: .25rem;
+}
+.nav-link:hover{
+  background-color: white;
+  color: green !important;
 }
 .green {
   color: green !important;
   background-color: rgb(255, 255, 255);
 }
-
-
+.dropdown-item{
+  white-space: normal;
+  display: block;
+  width: 100%;
+  padding: .25rem 1.5rem;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-weight: 400;
+  color: white;
+  text-align: inherit;
+  background-color: green;
+  border: 0;
+}
+.dropdown-item:hover{
+  background-color: white;
+  color: green;
+}
 .start p{
   font-size: 20px;
   color: #000000;
@@ -183,13 +235,12 @@ a:hover { text-decoration: none; }
   text-align: center;
   padding: 20px;
   margin: 0 auto;
-  transition: .5s ease;
+  transition: all .5s ease;
 }
 
-.Test img:hover{
-  filter: blur(2px);
+.Test:hover{
+  transform: scale(1.05); 
 }
-
 
 .centered h1 {
   position: absolute;
@@ -197,6 +248,7 @@ a:hover { text-decoration: none; }
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-shadow: 0px 0px 20px rgb(0 0 0);
 }
 
 
