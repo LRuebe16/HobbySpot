@@ -11,6 +11,8 @@ h1{
   text-align: center;
   font-size: 75px;
   color: green;
+  margin-bottom:20px;
+  line-height: 65px;
 }
 h2{
   font-family: 'Anton', sans-serif;
